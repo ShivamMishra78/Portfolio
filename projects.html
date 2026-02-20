@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Shivam Mishra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1>Shivam Mishra</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="fun.html">Fun</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="modeToggle" class="btn">Dark/Light</button>
+  </nav>
+</header>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="openProject('Business Website','A fully responsive business website','assets/project1.png','https://example.com/demo1')">
+        <h3>Business Website</h3>
+      </div>
+      <div class="project-card" onclick="openProject('JS Game','Interactive guessing game','assets/project2.png','https://example.com/demo2')">
+        <h3>JS Game</h3>
+      </div>
+      <div class="project-card" onclick="openProject('Portfolio Website','My personal portfolio','assets/project3.png','https://example.com/demo3')">
+        <h3>Portfolio Website</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProject()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="Project Image" style="width:100%; margin:1rem 0; border-radius:10px;">
+    <p id="modalDesc"></p>
+    <a id="modalLink" href="#" target="_blank" class="btn">Live Demo</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Shivam Mishra | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
